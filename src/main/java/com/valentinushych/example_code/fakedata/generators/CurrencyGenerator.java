@@ -1,7 +1,8 @@
 package com.valentinushych.example_code.fakedata.generators;
 
-import com.company.course.lectures.fakedata.enums.Currency;
-import com.company.course.lectures.fakedata.utils.RandomUtils;
+
+import com.valentinushych.example_code.fakedata.enums.Currency;
+import com.valentinushych.example_code.fakedata.utils.RandomUtils;
 
 public class CurrencyGenerator implements Generator {
 

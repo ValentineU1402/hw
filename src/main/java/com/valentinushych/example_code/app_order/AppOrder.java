@@ -1,9 +1,8 @@
 package com.valentinushych.example_code.app_order;
 
-import com.company.course.homeworks.homework_8.models.ExpressOrder;
-import com.company.course.homeworks.homework_8.models.InsuredOrder;
-import com.company.course.homeworks.homework_8.models.Order;
-import com.company.course.homeworks.homework_8.models.OrdinaryOrder;
+import com.valentinushych.example_code.app_order.models.ExpressOrder;
+import com.valentinushych.example_code.app_order.models.InsuredOrder;
+import com.valentinushych.example_code.app_order.models.Order;
 
 import java.util.ArrayList;
 import java.util.List;

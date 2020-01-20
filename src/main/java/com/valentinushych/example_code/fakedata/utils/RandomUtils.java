@@ -1,8 +1,8 @@
 package com.valentinushych.example_code.fakedata.utils;
 
-import com.company.course.lectures.fakedata.enums.Name;
-import com.company.course.lectures.fakedata.enums.Surname;
-import com.company.course.lectures.fakedata.models.Person;
+import com.valentinushych.example_code.fakedata.enums.Name;
+import com.valentinushych.example_code.fakedata.enums.Surname;
+import com.valentinushych.example_code.fakedata.models.Person;
 
 import java.util.Calendar;
 import java.util.Random;

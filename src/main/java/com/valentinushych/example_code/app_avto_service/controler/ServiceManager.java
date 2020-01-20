@@ -1,6 +1,6 @@
 package com.valentinushych.example_code.app_avto_service.controler;
 
-import com.company.course.homeworks.homework_10.AvtoService.model.ServiceAct;
+import com.valentinushych.example_code.app_avto_service.model.ServiceAct;
 
 import java.util.ArrayList;
 import java.util.List;

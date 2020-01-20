@@ -1,9 +1,9 @@
 package com.valentinushych.example_code.app_avto_service.model;
 
-import com.company.course.homeworks.homework_10.AvtoService.model.customerService.Customer;
-import com.company.course.homeworks.homework_10.AvtoService.model.customerService.Worker;
-import com.company.course.homeworks.homework_10.AvtoService.model.product.Product;
-import com.company.course.homeworks.homework_10.AvtoService.model.survices.IService;
+import com.valentinushych.example_code.app_avto_service.model.customerService.Customer;
+import com.valentinushych.example_code.app_avto_service.model.customerService.Worker;
+import com.valentinushych.example_code.app_avto_service.model.product.Product;
+import com.valentinushych.example_code.app_avto_service.model.survices.IService;
 
 import java.util.ArrayList;
 import java.util.List;

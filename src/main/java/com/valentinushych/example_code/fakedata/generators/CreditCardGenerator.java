@@ -1,8 +1,9 @@
 package com.valentinushych.example_code.fakedata.generators;
 
-import com.company.course.lectures.fakedata.enums.TypeCard;
-import com.company.course.lectures.fakedata.models.CreditCard;
-import com.company.course.lectures.fakedata.utils.RandomUtils;
+
+import com.valentinushych.example_code.fakedata.enums.TypeCard;
+import com.valentinushych.example_code.fakedata.models.CreditCard;
+import com.valentinushych.example_code.fakedata.utils.RandomUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -1,6 +1,6 @@
 package com.valentinushych.example_code.fakedata.models;
 
-import com.company.course.lectures.fakedata.enums.TypeCard;
+import com.valentinushych.example_code.fakedata.enums.TypeCard;
 
 public class CreditCard {
     private String cardNumber;

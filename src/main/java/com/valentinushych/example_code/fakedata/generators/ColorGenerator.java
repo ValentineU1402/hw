@@ -1,6 +1,6 @@
 package com.valentinushych.example_code.fakedata.generators;
 
-import com.company.course.lectures.fakedata.utils.RandomUtils;
+import com.valentinushych.example_code.fakedata.utils.RandomUtils;
 
 import java.awt.*;
 

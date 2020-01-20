@@ -1,14 +1,14 @@
 package com.valentinushych.example_code.app_avto_service;
 
-import com.company.course.homeworks.homework_10.AvtoService.controler.ServiceManager;
-import com.company.course.homeworks.homework_10.AvtoService.model.ServiceAct;
-import com.company.course.homeworks.homework_10.AvtoService.model.customerService.Customer;
-import com.company.course.homeworks.homework_10.AvtoService.model.customerService.Worker;
-import com.company.course.homeworks.homework_10.AvtoService.model.product.Product;
-import com.company.course.homeworks.homework_10.AvtoService.model.survices.IService;
-import com.company.course.homeworks.homework_10.AvtoService.model.survices.OilChange;
-import com.company.course.homeworks.homework_10.AvtoService.model.survices.OilCheck;
-import com.company.course.homeworks.homework_10.AvtoService.model.survices.TyresChange;
+import com.valentinushych.example_code.app_avto_service.controler.ServiceManager;
+import com.valentinushych.example_code.app_avto_service.model.ServiceAct;
+import com.valentinushych.example_code.app_avto_service.model.customerService.Customer;
+import com.valentinushych.example_code.app_avto_service.model.customerService.Worker;
+import com.valentinushych.example_code.app_avto_service.model.product.Product;
+import com.valentinushych.example_code.app_avto_service.model.survices.IService;
+import com.valentinushych.example_code.app_avto_service.model.survices.OilChange;
+import com.valentinushych.example_code.app_avto_service.model.survices.OilCheck;
+import com.valentinushych.example_code.app_avto_service.model.survices.TyresChange;
 
 public class appServiceCenter {
     public static void main(String[] args) {

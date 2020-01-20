@@ -1,10 +1,11 @@
 package com.valentinushych.example_code.fakedata.generators;
 
-import com.company.course.lectures.fakedata.enums.EmailType;
-import com.company.course.lectures.fakedata.enums.FreeEmailDomain;
-import com.company.course.lectures.fakedata.models.Email;
-import com.company.course.lectures.fakedata.models.Person;
-import com.company.course.lectures.fakedata.utils.RandomUtils;
+
+import com.valentinushych.example_code.fakedata.enums.EmailType;
+import com.valentinushych.example_code.fakedata.enums.FreeEmailDomain;
+import com.valentinushych.example_code.fakedata.models.Email;
+import com.valentinushych.example_code.fakedata.models.Person;
+import com.valentinushych.example_code.fakedata.utils.RandomUtils;
 
 public class EmailGenerator implements Generator{
 
