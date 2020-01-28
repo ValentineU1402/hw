@@ -1,21 +1,24 @@
 package com.valentinushych.example_code.url_builder.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MyURL {
     private String protocol = "";
     private String domain = "";
     private String port = "";
     private String path = "";
-    private String parameter = "";
+    private Map<String, String> parameters = new HashMap<>();
 
     private MyURL() {
     }
 
-    private MyURL(String protocol, String domain, String port, String path, String parameter) {
+    private MyURL(String protocol, String domain, String port, String path, Map<String, String> parameter) {
         this.protocol = protocol;
         this.domain = domain;
         this.port = port;
         this.path = path;
-        this.parameter = parameter;
+        this.parameters.putAll(parameter);
     }
 
     public String getProtocol() {
@@ -34,13 +37,15 @@ public class MyURL {
         return path;
     }
 
-    public String getParameter() {
-        return parameter;
+    public Map<String, String> getParameter() {
+        return parameters;
     }
 
     @Override
     public String toString() {
-        return getProtocol() + getDomain() + getPort() + getPath() + getParameter();
+        StringBuilder param = new StringBuilder();
+        getParameter().entrySet().forEach(entry -> param.append(entry));
+        return getProtocol() + getDomain() + getPort() + getPath() + param;
     }
 
     public static class Builder {
@@ -48,10 +53,6 @@ public class MyURL {
 
         public Builder() {
             url = new MyURL();
-        }
-
-        public Builder(String protocol, String domain, String port, String path, String parameter) {
-            url = new MyURL(protocol, domain, port, path, parameter);
         }
 
         public Builder withProtocol(String protocol) {
@@ -70,18 +71,22 @@ public class MyURL {
         }
 
         public Builder withPath(String path) {
-            url.path = path.startsWith("/") ? path : "/" + path;
+            url.path = path.startsWith("/") ? path + "?" : "/" + path + "?";
             return this;
         }
 
         public Builder withParameter(String parameter) {
-            url.parameter += url.parameter.startsWith("?") ? parameter + "&" : "?" + parameter + "&";
+            url.parameters.put(parameter, "&");
             return this;
         }
 
         public Builder withParameters(String key, String value) {
-            String param = key + "=" + value;
-            url.parameter += url.parameter.startsWith("?") ? param + "&" : "?" + param + "&";
+            url.parameters.put(key, value + "&");
+            return this;
+        }
+
+        public Builder withParameters(Map<String, String> parameters) {
+            parameters.forEach((k, v) -> url.parameters.put(k, v + "&"));
             return this;
         }
 
