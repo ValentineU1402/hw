@@ -1,6 +1,6 @@
 package com.valentinushych.example_code.url_builder;
 
-import com.valentinushych.example_code.url_builder.model.MyURL;
+import com.company.course.homeworks.homeworks_11.model.MyURL;
 
 public class AppURL {
 
